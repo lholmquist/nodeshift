@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.0.0 (2020-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* removal of Node 8 support
+* The api for the openshift rest client has changed slightly, but there should be no nodeshift api changes
+* Changing the base s2i images
+* Slight Refactor
+* remove the string option for namespace creation.  This has been deprecated and it is now time to remove it
+* This removes the watch command
+* this now uses the nodeshift/centos7-s2i-nodejs image by default. This should be a semver major change.
+
+* remove the string version of the namespace flag (#299) ([5674b89](https://www.github.com/lholmquist/nodeshift/commit/5674b899946c0b87ae3c255f2ac6f5463c73c9b1)), closes [#299](https://www.github.com/lholmquist/nodeshift/issues/299) [#282](https://www.github.com/lholmquist/nodeshift/issues/282)
+
+
+### src
+
+* using ubi7/nodejs-10 as default image ([#372](https://www.github.com/lholmquist/nodeshift/issues/372)) ([0bc82bd](https://www.github.com/lholmquist/nodeshift/commit/0bc82bdf18a6bc0bb7195a95093bf91cd0c48294))
+
+
+### feat
+
+* remove deprecation warnings from openshift rest client ([#398](https://www.github.com/lholmquist/nodeshift/issues/398)) ([2b97f49](https://www.github.com/lholmquist/nodeshift/commit/2b97f491eaf252ed0166eb1cf6f6067d081a66c9)), closes [#377](https://www.github.com/lholmquist/nodeshift/issues/377)
+* Remove Watch command ([#296](https://www.github.com/lholmquist/nodeshift/issues/296)) ([fa79166](https://www.github.com/lholmquist/nodeshift/commit/fa79166f85c059636117fd7019e661cfa17a1591)), closes [#280](https://www.github.com/lholmquist/nodeshift/issues/280)
+* update references of bucharest-gold to use the nodeshift namespace ([#269](https://www.github.com/lholmquist/nodeshift/issues/269)) ([6092108](https://www.github.com/lholmquist/nodeshift/commit/60921089e76eaa133b4dc4668d806e6259f9aacc)), closes [#268](https://www.github.com/lholmquist/nodeshift/issues/268)
+* Update to latest Openshift Rest Client ([#293](https://www.github.com/lholmquist/nodeshift/issues/293)) ([e73db9c](https://www.github.com/lholmquist/nodeshift/commit/e73db9ce98f0040d50a035b4b749596d19724314))
+
+
+### chore
+
+* Engine parameter targets node 10+ ([#406](https://www.github.com/lholmquist/nodeshift/issues/406)) ([c820b80](https://www.github.com/lholmquist/nodeshift/commit/c820b80de0650a3c1dbf0d6e8098c20cd4bb198b))
+
 ## [7.1.0](https://github.com/nodeshift/nodeshift/compare/v7.0.0...v7.1.0) (2020-07-29)
 
 
